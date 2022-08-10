@@ -56,20 +56,18 @@
 .card::before,
 .card::after {
   content: ' ';
-  /* display: none; */
-  /* hide it */
   width: 250px;
   height: 250px;
   background-color: #ffffff55;
   border-radius: 50%;
 }
 
-::before {
+.card::before {
   top: -80px;
   right: -170px;
 }
 
-::after { 
+.card::after { 
   top: 125px;
   right: -80px;
 }
