@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  text-align: center;
+}
+
+:root {
+  --color-main: #2e2f2c;
+  --color-alt: #eaeaea;
+  --color-accent: #2690d4;
+  --padding: 40px;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.header,
+.main {
+  flex-direction: column;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section {
+  padding: var(--padding);
+}
+
+.more,
+.email {
+  text-decoration: none;
+}
+
+.more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid;
+}
+
+.more:hover {
+  color: var(--color-main);
+}
+
+.more:hover,
+.main,
+.card {
+  background-color: var(--color-alt);
+}
+
+.more,
+.cards,
+.about-card {
+  background-color: var(--color-main);
+}
+
+.heading,
+.subheading,
+.card-heading {
+  margin: 20px;
+  color: var(--color-main);
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.subheading {
+  font-size: 2rem;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+}
+
+.thin {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.inside {
+  margin: 20px;
+}
+
+.cards {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding);
+}
+
+.card {
+  max-width: 400px;
+  margin: 30px 10px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.black {
+  color: var(--color-main);
+}
+
+.white {
+  color: var(--color-alt);
+}
+
+.contacts-card,
+.about-card {
+  width: 100vw;
+}
+
+.contacts-card,
+.about-card {
+  padding: var(--padding);
+}
+
+.contacts-card {
+  background-color: var(--color-accent);
+}
+
+.email {
+  display: block;
+  margin-top: var(--padding);
+}
+
+.footer {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  color: var(--color-alt);
+  background-color: black;
+}
+
+.credits {
+  color: var(--color-accent);
+  text-decoration: none;
+}
