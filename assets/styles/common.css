@@ -17,6 +17,7 @@
 }
 
 .sub-heading {
+  margin-bottom: 50px;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.2;
@@ -45,6 +46,10 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }
 
 @media screen and (min-width: 576px) {
