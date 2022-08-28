@@ -8,65 +8,76 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="flex header">
-      <!-- <div class="bg-image"><img src="./images/header.png" alt="" /></div> -->
-      <h1 class="white heading">Welcome to Acme Web Solutions</h1>
-      <p class="thin white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint atque
-        culpa dignissimos necessitatibus dolores a quam temporibus officia
-        blanditiis accusantium!
-      </p>
-      <a class="more white" href="#info">Read more</a>
+    <header class="header">
+      <div class="thin flex header-container">
+        <h1 class="white heading">Welcome to Acme Web Solutions</h1>
+        <p class="white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint atque
+          culpa dignissimos necessitatibus dolores a quam temporibus officia
+          blanditiis accusantium!
+        </p>
+        <a class="more white" href="#info">Read more</a>
+      </div>
     </header>
     <main class="flex main">
       <section id="info" class="section">
-        <h2 class="subheading">Web & Application Development</h2>
-        <p class="thin black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in esse
-          saepe, inventore quos unde sint eius nulla recusandae eos quod. Aut,
-          earum voluptatum eveniet natus ullam vero laborum. Aut.
-        </p>
+        <div class="thin">
+          <h2 class="subheading">Web & Application Development</h2>
+          <p class="black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in
+            esse saepe, inventore quos unde sint eius nulla recusandae eos quod.
+            Aut, earum voluptatum eveniet natus ullam vero laborum. Aut.
+          </p>
+        </div>
       </section>
       <section class="section flex cards">
         <article class="card">
-          <img class="card-image" src="./images/photo1.jpeg" alt="" />
-          <h3 class="card-heading">Web Development</h3>
-          <p class="inside black">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-            eius omnis similique at in minus, corrupti vel. Perferendis, ducimus
-            ipsam.
-          </p>
+          <img class="card-image" src="./images/photo1.jpeg" alt="Web developer" />
+          <div class="inside">
+            <h3 class="card-heading">Web Development</h3>
+            <p class="black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates eius omnis similique at in minus, corrupti vel.
+              Perferendis, ducimus ipsam.
+            </p>
+          </div>
         </article>
         <article class="card">
-          <img class="card-image" src="./images/photo2.jpeg" alt="" />
-          <h3 class="card-heading">Mobile Applications</h3>
-          <p class="inside black">
-            Distinctio error porro repellendus quis totam sit, aliquid
-            aspernatur cum atque eos explicabo maxime facilis architecto
-            pariatur natus necessitatibus tenetur?
-          </p>
+          <img class="card-image" src="./images/photo2.jpeg" alt="Mobile phone user" />
+          <div class="inside">
+            <h3 class="card-heading">Mobile Applications</h3>
+            <p class="black">
+              Distinctio error porro repellendus quis totam sit, aliquid
+              aspernatur cum atque eos explicabo maxime facilis architecto
+              pariatur natus necessitatibus tenetur?
+            </p>
+          </div>
         </article>
         <article class="card">
-          <img class="card-image" src="./images/photo3.jpeg" alt="" />
-          <h3 class="card-heading">Tech Marketing</h3>
-          <p class="inside black">
-            Qui est accusamus quis veniam, et alias molestiae cum cupiditate
-            animi placeat optio maiores unde aspernatur, natus dolor vero
-            nesciunt!
-          </p>
+          <img class="card-image" src="./images/photo3.jpeg" alt="Marketing charts" />
+          <div class="inside">
+            <h3 class="card-heading">Tech Marketing</h3>
+            <p class="black">
+              Qui est accusamus quis veniam, et alias molestiae cum cupiditate
+              animi placeat optio maiores unde aspernatur, natus dolor vero
+              nesciunt!
+            </p>
+          </div>
         </article>
       </section>
       <section class="section">
-        <h2 class="subheading">We handle all of your digital needs</h2>
-        <p class="thin black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          perferendis cum libero accusamus delectus nemo ducimus consequuntur?
-          Officiis eius aspernatur, nostrum iusto doloremque molestias dolor
-          earum nihil minima! Laudantium, ratione.
-        </p>
+        <div class="thin">
+          <h2 class="subheading">We handle all of your digital needs</h2>
+          <p class="black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            perferendis cum libero accusamus delectus nemo ducimus consequuntur?
+            Officiis eius aspernatur, nostrum iusto doloremque molestias dolor
+            earum nihil minima! Laudantium, ratione.
+          </p>
+        </div>
       </section>
       <section class="flex contacts">
-        <article class="white contacts-card">
+        <section class="white contacts-card">
           <h2 class="subheading white">Contact Us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -76,8 +87,8 @@
           <a class="white email" href="mailto:email@example.com">
             email@example.com</a
           >
-        </article>
-        <article class="white about-card">
+        </section>
+        <section class="white about-card">
           <h2 class="subheading white">About Our Company</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
@@ -86,7 +97,7 @@
             similique autem sequi labore explicabo suscipit in cumque, optio at
             aperiam totam, molestiae corrupti!
           </p>
-        </article>
+        </section>
       </section>
     </main>
     <footer class="flex footer">

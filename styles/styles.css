@@ -15,18 +15,30 @@
   display: flex;
 }
 
-.header,
+.header-container,
 .main {
   flex-direction: column;
 }
 
 .header {
+  position: relative;
+}
+
+.header-container {
   justify-content: center;
   align-items: center;
   min-height: 500px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background-image: url(../images/header.png);
   background-size: cover;
   background-position: center;
+  opacity: 0.85;
 }
 
 .section {
@@ -39,8 +51,8 @@
 }
 
 .more {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: calc(var(--padding) / 2);
+  padding: calc(var(--padding) / 4) calc(var(--padding) / 2);
   border: 1px solid;
 }
 
@@ -63,7 +75,7 @@
 .heading,
 .subheading,
 .card-heading {
-  margin: 20px;
+  margin-bottom: calc(var(--padding) / 2);
   color: var(--color-main);
 }
 
@@ -80,12 +92,13 @@
 }
 
 .thin {
-  margin: 0 auto;
   max-width: 768px;
+  margin: 0 auto;
 }
 
+.thin,
 .inside {
-  margin: 20px;
+  padding: calc(var(--padding) / 2);
 }
 
 .cards {
@@ -96,11 +109,12 @@
 
 .card {
   max-width: 400px;
-  margin: 30px 10px;
+  margin: calc(var(--padding) * 3 / 4) calc(var(--padding) / 4);
 }
 
 .card-image {
   width: 100%;
+  display: block;
 }
 
 .black {
@@ -113,7 +127,7 @@
 
 .contacts-card,
 .about-card {
-  width: 100vw;
+  width: 50%;
 }
 
 .contacts-card,
@@ -126,14 +140,14 @@
 }
 
 .email {
-  display: block;
+  display: inline-block;
   margin-top: var(--padding);
 }
 
 .footer {
   flex-direction: row;
   justify-content: space-around;
-  padding: 30px;
+  padding: calc(var(--padding) / 2);
   color: var(--color-alt);
   background-color: black;
 }
