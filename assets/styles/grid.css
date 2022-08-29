@@ -1,12 +1,12 @@
-.article {
-  background-color: black;
-  color: white;
-}
-
 :root {
   --column-count: 12;
   --gutter-size: 10px;
   --row-margin-size: calc(var(--gutter-size) / 2);
+}
+
+.article {
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -22,7 +22,6 @@
 
   margin-left: calc(var(--row-margin-size) * -1);
   margin-right: calc(var(--row-margin-size) * -1);
-  /* column-gap: var(--gutter-size); */
 }
 
 .row > * {

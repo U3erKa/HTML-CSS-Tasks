@@ -18,7 +18,7 @@
   <body>
     <header class="header">
       <div class="container header-flex-container">
-        <a href="#" class="link logo-link"
+        <a href="#" class="link"
           ><img class="img" src="assets/icons/WD.svg" alt="WD logo" />
         </a>
 
@@ -50,7 +50,7 @@
       </div>
     </header>
 
-    <section class="greeting">
+    <section class="greeting section">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
@@ -75,12 +75,12 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section class="section">
       <div class="container">
         <div class="row justify-center">
           <div class="col-12 col-md-6">
-            <article class="about-me-article">
-              <h2 class="sub-heading about-me-heading-margin">Обо мне</h2>
+            <article class="text-center">
+              <h2 class="sub-heading sub-heading-margin">Обо мне</h2>
               <p class="text">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
@@ -92,10 +92,10 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="section">
       <div class="container">
         <article class="row align-center">
-          <div class="skills-list col-12 col-sm-6">
+          <div class="col-12 col-sm-6">
             <h2 class="sub-heading skills-heading-margin">Мои навыки</h2>
             <div class="skills-list-item">
               <p class="text">
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section class="clients">
+    <section class="section">
       <div class="container">
         <div class="row justify-center">
           <img
@@ -154,12 +154,12 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form section">
       <div class="container">
         <div class="row justify-center">
           <div class="col-12 col-md-6">
             <form method="get">
-              <legend class="form-legend">
+              <legend class="text-center">
                 <h2 class="sub-heading">Хотите веб-сайт?</h2>
                 <p class="text">
                   Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -169,7 +169,7 @@
               </legend>
               <fieldset>
                 <div class="container">
-                  <div class="fieldset row no-gutters">
+                  <div class="row no-gutters">
                     <input
                       class="fieldset-entry col"
                       type="text"
@@ -177,7 +177,6 @@
                       id="name"
                       placeholder="Ваше имя"
                       pattern="^[A-Za-z]{2,15}$"
-                      autofocus
                       required
                     />
                     <input
@@ -187,7 +186,6 @@
                       id="email"
                       placeholder="Ваш e-mail"
                       pattern="^[A-Za-z0-9]{3,18}@[a-z]{1,15}\.[a-z]{1,8}$"
-                      autofocus
                       required
                     />
                   </div>
@@ -201,6 +199,13 @@
                       id="msg"
                       placeholder="Сообщение"
                     />
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row justify-center">
+                    <div class="col-3 form-submit-button">
+                      <button class="btn" type="submit">Отправить</button>
+                    </div>
                   </div>
                 </div>
               </fieldset>

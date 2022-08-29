@@ -10,9 +10,6 @@
   align-items: center;
 }
 
-.logo-link {
-}
-
 .main-nav {
   position: relative;
 }
@@ -39,9 +36,6 @@
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 5px;
-}
-
-.nav-list-item {
 }
 
 .nav-list-item + .nav-list-item {

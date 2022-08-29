@@ -1,15 +1,6 @@
-/* .clients {} */
-
-.skills,
-.form {
-  padding: 100px 0;
-}
-
 .skills-heading-margin {
   margin-bottom: 30px;
 }
-
-/* .skills-list {} */
 
 .skills-list-item {
   --skills-list-item-margin: 25px;
@@ -38,39 +29,4 @@
 .skills-list-item::after {
   border: 2px solid var(--progress-bg-color);
   width: 75%;
-}
-
-.form {
-  background-color: var(--light-gray-bg-color);
-}
-
-.form-legend {
-  text-align: center;
-}
-
-/* .fieldset {} */
-
-.fieldset-entry {
-  margin-top: 20px;
-  padding: 10px 15px;
-  border: none;
-}
-
-.fieldset-entry + .fieldset-entry {
-  margin-left: 30px;
-}
-
-.textarea {
-  min-height: 200px;
-  padding: 0 5px;
-}
-
-@media (max-width: 1199px) {
-  .fieldset {
-    flex-direction: column;
-  }
-
-  .fieldset-entry + .fieldset-entry {
-    margin-left: 0px;
-  }
 }

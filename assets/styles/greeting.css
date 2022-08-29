@@ -1,6 +1,5 @@
 .greeting {
   background-color: var(--light-gray-bg-color);
-  padding: 100px 0;
 }
 
 .greeting-img-wrapper{
