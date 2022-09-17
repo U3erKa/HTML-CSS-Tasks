@@ -1,0 +1,87 @@
+.img-group {
+  position: relative;
+  width: fit-content;
+  /* height: 600px; */
+  /* height: 100%; */
+  margin: 0 auto;
+  font-size: 0;
+  top: -100px;
+}
+
+.left-img-wrapper,
+.right-img-wrapper {
+  width: 50%;
+
+}
+
+.left-img,
+.right-img {
+  position: relative;
+  width: 100%;
+}
+
+.left-img {
+  top: -50px;
+  left: 0;
+  z-index: 1;
+}
+
+.right-img {
+  top: 0;
+  right: 0;
+}
+
+.separator-line {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 900px;
+  border: 2px solid #E4E4E4;
+}
+
+.guide-heading {
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  /* border: 2px solid orange; */
+}
+
+.create-account {
+  flex-direction: row-reverse;
+}
+
+.accent-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.outro {
+  min-height: 100vh;
+  text-align: center;
+  color: var(--color-white);
+  background-color: #252B42;
+}
+
+.outro::before {
+  background-image: url(../images/outro-background.jpg);
+  opacity: 0.4;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf) format('TrueType');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf) format('TrueType');
+  font-weight: 700;
+  font-style: normal;
+}
