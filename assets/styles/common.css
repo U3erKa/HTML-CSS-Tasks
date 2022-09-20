@@ -56,12 +56,21 @@
   display: block;
 }
 
+.links {
+  position: relative;
+  margin-top: 40px;
+  /* z-index: 5; */
+}
+
 .link {
+  position: relative;
   display: inline-block;
+  min-width: 235px;
   color: var(--color-white);
   border: 1px solid;
   border-radius: 10px;
   padding: 16px;
+  /* z-index: 5; */
 }
 
 .link + .link {
@@ -80,4 +89,10 @@
   src: url(../fonts/Montserrat-Bold.ttf);
   font-weight: 700;
   font-style: normal;
+}
+
+@media (min-width: 320px) {
+  .link + .link {
+    margin-left: 0;
+  }
 }

@@ -23,12 +23,13 @@
 .left-img {
   top: -50px;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .right-img {
   top: 0;
   right: 0;
+  z-index: 2;
 }
 
 .separator-line {
@@ -65,6 +66,7 @@
   text-align: center;
   color: var(--color-white);
   background-color: #252B42;
+  z-index: 2;
 }
 
 .outro::before {
@@ -84,4 +86,17 @@
   src: url(../fonts/Montserrat-Bold.ttf) format('TrueType');
   font-weight: 700;
   font-style: normal;
+}
+
+@media (max-height: 780px) {
+  .img-group {
+    top: 0px;
+  }
+}
+
+@media (min-width:320px) {
+  .create-account,
+  .explore {
+    flex-direction: column;
+  }
 }

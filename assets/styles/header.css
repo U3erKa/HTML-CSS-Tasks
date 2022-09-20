@@ -19,6 +19,7 @@
   /* min-height: 100vh; */
   flex-grow: 1;
   background-color: #171010;
+  z-index: 2;
 }
 
 .intro::before {
@@ -33,10 +34,6 @@
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
-}
-
-.links {
-  margin-top: 40px;
 }
 
 .main-link {
