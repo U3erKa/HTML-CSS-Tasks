@@ -1,6 +1,4 @@
 .footer {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
@@ -14,20 +12,11 @@
 }
 
 .light-text {
-  color: #BDBDBD;
+  color: var(--color-light-text);
 }
 
 .copyright-text {
   font-size: 0.5rem;
   line-height: 0.5rem;
   font-weight: 700;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-  }
-  .light-text {
-    color: var(--color-white);
-  }
 }

@@ -1,11 +1,9 @@
 .img-group {
   position: relative;
   width: fit-content;
-  /* height: 600px; */
-  /* height: 100%; */
   margin: 0 auto;
   font-size: 0;
-  top: -30px;
+  bottom: 40px;
 }
 
 .left-img-wrapper,
@@ -20,22 +18,22 @@
 }
 
 .left-img {
-  top: -50px;
+  bottom: 50px;
   left: 0;
   z-index: 3;
 }
 
 .right-img {
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: 2;
 }
 
 .separator-line {
-  margin: 30px auto;
+  margin-bottom: 30px;
   width: 75%;
   max-width: 900px;
-  border: 2px solid #E4E4E4;
+  border: 2px solid var(--color-separator-line);
 }
 
 .guide-heading {
@@ -47,9 +45,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
   text-align: center;
-  /* border: 2px solid orange; */
+}
+
+.sub-heading {
+  margin: 0;
 }
 
 .create-account,
@@ -57,23 +57,28 @@
   flex-direction: column;
 }
 
+.explore,
+.outro {
+  padding-bottom: 50px;
+}
+
 .accent-heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 1rem;
   color: var(--color-accent);
 }
 
 .outro {
-  flex-direction: column;
   min-height: 100vh;
   text-align: center;
   color: var(--color-white);
-  background-color: #252B42;
+  background-color: var(--color-header);
   z-index: 2;
 }
 
-.outro::before {
-  opacity: 0.4;
+.outro-heading {
+  color: var(--color-white);
 }
 
 @font-face {
@@ -88,22 +93,4 @@
   src: url(../fonts/Montserrat-Bold.ttf) format('TrueType');
   font-weight: 700;
   font-style: normal;
-}
-
-@media (min-height: 768px) {
-  .img-group {
-    top: -100px;
-  }
-}
-
-@media (min-width: 768px) {
-  .create-account {
-    flex-direction: row-reverse;
-  }
-  .explore {
-    flex-direction: row;
-  }
-  .outro::before {
-    background-image: url(../images/outro-background.jpg);
-  }  
 }

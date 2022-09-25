@@ -1,0 +1,66 @@
+@media (min-width: 512px) {
+  .link + .link {
+    margin-top: 0;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 24px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .navbar {
+    padding: 15px 70px;
+  }
+  .intro {
+    background-color: #171010;
+  }
+  .intro::before {
+    background-image: url(../images/header-background.jpg);
+    opacity: 0.6;
+  }
+  .outro::before {
+    background-image: url(../images/outro-background.jpg);
+    opacity: 0.4;
+  }
+  .intro::before,
+  .outro::before {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .heading,
+  .pre-heading,
+  .heading-text,
+  .alt-link,
+  .light-text {
+    color: var(--color-white);
+  }
+  .text-content {
+    padding: 25px;
+  }
+  .text {
+    margin: 0;
+  }
+  .img-wrapper {
+    padding: 25px;
+  }
+  .section {
+    text-align: left;
+  }
+  .create-account {
+    flex-direction: row-reverse;
+  }
+  .explore,
+  .footer {
+    flex-direction: row;
+  }
+  .social-media-link {
+    padding: 0;
+  }
+}
