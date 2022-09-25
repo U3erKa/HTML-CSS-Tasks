@@ -5,53 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam Layout</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/javascript.svg"
+      type="image/svg+xml"
+    />
     <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
 
-  <header class="header">
-    <nav class="navbar">
-      <div class="img-wrapper">
-        <img
-          class="img logo"
-          src="assets/images/logo.svg"
-          alt="Bella Olonje logo"
-        />
-      </div>
-      <a href="assets/images/javascript.svg" class="menu">
-        <img class="img" src="assets/images/nav-button.svg" alt="nav-button" />
-      </a>
-    </nav>
-    <div class="intro">
-      <div class="text-heading-content">
-        <h2 class="pre-heading">Food app</h2>
-        <h1 class="heading font-poppins">
-          Why stay hungry when you can order from Bella Olonje
-        </h1>
-        <p class="text heading-text">Download the Bella Olonje's food app now on</p>
-        <div class="links">
-          <a class="link main-link" href="#">Playstore</a>
-          <a class="link alt-link" href="#">App store</a>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <picture class="img-wrapper">
+          <img
+            class="img logo"
+            src="assets/images/logo.svg"
+            alt="Bella Olonje logo"
+          />
+        </picture>
+        <a href="assets/images/javascript.svg" class="menu">
+          <img class="img" src="assets/images/nav-button.svg" alt="nav-button" />
+        </a>
+      </nav>
+      <div class="intro">
+        <div class="text-heading-content">
+          <h2 class="pre-heading">Food app</h2>
+          <h1 class="heading font-poppins">
+            Why stay hungry when you can order from Bella Olonje
+          </h1>
+          <p class="text heading-text">
+            Download the Bella Olonje's food app now on
+          </p>
+          <div class="links">
+            <a class="link main-link" href="#">Playstore</a>
+            <a class="link alt-link" href="#">App store</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <body>
     <section class="section">
       <div class="img-group">
-        <div class="img-wrapper left-img-wrapper">
+        <picture class="img-wrapper left-img-wrapper">
+          <source srcset="assets/images/app-preview-1.avif" type="image/avif" />
+          <source srcset="assets/images/app-preview-1.webp" type="image/webp" />
           <img
             class="img left-img"
             src="assets/images/app-preview-1.png"
-            alt="Our mobile app"
-          />
-        </div><div class="img-wrapper right-img-wrapper">
+            alt="Our mobile app" /></picture
+        ><picture class="img-wrapper right-img-wrapper">
+          <source srcset="assets/images/app-preview-2.avif" type="image/avif" />
+          <source srcset="assets/images/app-preview-2.webp" type="image/webp" />
           <img
             class="img right-img"
             src="assets/images/app-preview-2.png"
             alt="Our mobile app"
           />
-        </div>
+        </picture>
       </div>
       <div class="separator-line"></div>
       <h2 class="sub-heading guide-heading font-poppins">How the app works</h2>
@@ -67,9 +77,11 @@
           An account is created with your email and a desired password
         </p>
       </div>
-      <div class="img-wrapper">
+      <picture class="img-wrapper">
+        <source srcset="assets/images/login.avif" type="image/avif" />
+        <source srcset="assets/images/login.webp" type="image/webp" />
         <img class="img" src="assets/images/login.png" alt="Login" />
-      </div>
+      </picture>
     </section>
 
     <section class="section explore">
@@ -80,13 +92,15 @@
           Shop for your favorite meals or drinks and enjoy while doing it.
         </p>
       </div>
-      <div class="img-wrapper">
+      <picture class="img-wrapper">
+        <source srcset="assets/images/app-homepage.avif" type="image/avif" />
+        <source srcset="assets/images/app-homepage.webp" type="image/webp" />
         <img
           class="img"
           src="assets/images/app-homepage.png"
           alt="App homepage"
         />
-      </div>
+      </picture>
     </section>
 
     <section class="outro">
