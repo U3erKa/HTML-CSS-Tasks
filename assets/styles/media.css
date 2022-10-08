@@ -9,9 +9,6 @@
   :root {
     font-size: 24px;
   }
-  .logo {
-    width: 200px;
-  }
   .navbar {
     padding: 15px 70px;
   }
@@ -62,5 +59,22 @@
   }
   .social-media-link {
     padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 200px;
+  }
+  .section {
+    min-width: 1024px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .section > * {
+    width: 50%;
+  }
+  .img {
+    margin: 0 auto;
   }
 }
