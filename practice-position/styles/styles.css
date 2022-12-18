@@ -1,0 +1,73 @@
+:root {
+  font-family: "arial", "sans-serif";
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+}
+
+.sales {
+  background: linear-gradient(0.25turn, #ffcd9a, #cc6682);
+}
+
+.orders {
+  background: linear-gradient(0.25turn, #8dc0ff, #0075d4);
+}
+
+.online {
+  background: linear-gradient(0.25turn, #addfdc, #00baa6);
+}
+
+.inside-card {
+  margin: 20px;
+}
+
+.amount,
+.delta,
+.svg,
+.card::before,
+.card::after {
+  position: absolute;
+}
+
+.amount {
+  top: 50px;
+  font-size: 36px;
+}
+
+.delta {
+  bottom: 20px;
+  font-size: 18px;
+}
+
+.svg {
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  /* would be better to change color, not invert existing one */
+  filter: invert();
+}
+
+.card::before,
+.card::after {
+  content: ' ';
+  width: 250px;
+  height: 250px;
+  background-color: #ffffff55;
+  border-radius: 50%;
+}
+
+.card::before {
+  top: -80px;
+  right: -170px;
+}
+
+.card::after { 
+  top: 125px;
+  right: -80px;
+}
