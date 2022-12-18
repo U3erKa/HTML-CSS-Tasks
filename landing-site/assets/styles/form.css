@@ -1,0 +1,32 @@
+.form {
+  background-color: var(--light-gray-bg-color);
+}
+
+.fieldset-entry {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+}
+
+.fieldset-entry + .fieldset-entry {
+  margin-left: 30px;
+}
+
+.textarea {
+  min-height: 200px;
+  padding: 0 5px;
+}
+
+.form-submit-button {
+  margin-top: 50px;
+}
+
+@media (max-width: 1199px) {
+  .fieldset {
+    flex-direction: column;
+  }
+
+  .fieldset-entry + .fieldset-entry {
+    margin-left: 0px;
+  }
+}

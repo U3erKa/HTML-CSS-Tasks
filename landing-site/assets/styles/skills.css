@@ -1,0 +1,32 @@
+.skills-heading-margin {
+  margin-bottom: 30px;
+}
+
+.skills-list-item {
+  --skills-list-item-margin: 25px;
+  position: relative;
+  margin-bottom: var(--skills-list-item-margin);
+}
+
+.skills-list-item:last-child {
+  margin-bottom: calc(var(--skills-list-item-margin) * 2);
+}
+
+.skills-list-item::before,
+.skills-list-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+}
+
+.skills-list-item::before {
+  border: 2px solid var(--accent-color);
+  width: 60%;
+  z-index: 1;
+}
+
+.skills-list-item::after {
+  border: 2px solid var(--progress-bg-color);
+  width: 75%;
+}
